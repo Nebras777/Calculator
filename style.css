@@ -1,3 +1,19 @@
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#button-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 500px;
+}
+
+#equals {
+    grid-column: 4 / span 2;
+}
+
 #pfp {
     width: 50px;
     border-radius: 50%;
