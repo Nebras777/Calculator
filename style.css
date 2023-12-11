@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 #container {
     display: flex;
     justify-content: center;
@@ -17,4 +21,20 @@
 #pfp {
     width: 50px;
     border-radius: 50%;
+}
+
+#footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-bottom: 8px;
+}
+
+#github-link {
+    height: 50px;
 }
