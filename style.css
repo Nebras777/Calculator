@@ -2,9 +2,22 @@ body {
     margin: 0;
 }
 
-#container {
+#main {
     display: flex;
     justify-content: center;
+}
+
+#input-box {
+    height: 100px;
+    border: 1px solid black;
+}
+
+#past-input {
+    height: 33%;
+}
+
+#current-input {
+    height: 67%;
 }
 
 #button-grid {
