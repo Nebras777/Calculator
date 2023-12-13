@@ -57,13 +57,13 @@ html, body {
 }
 
 .button.clearer {
-    background-color: red;
-    box-shadow: 3px 3px 3px maroon;
+    background-color: rgb(88, 155, 0);
+    box-shadow: 3px 3px 3px rgb(56, 99, 0);
 }
 
 .button.operator {
-    background-color: green;
-    box-shadow: 3px 3px 3px darkgreen;
+    background-color: rgb(164, 164, 164);
+    box-shadow: 3px 3px 3px rgb(143, 143, 143);
 }
 
 .button:active {
@@ -73,8 +73,8 @@ html, body {
 
 #equals {
     grid-column: 4 / span 2;
-    background-color: blue;
-    box-shadow: 3px 3px 3px navy;
+    background-color: rgb(164, 164, 164);
+    box-shadow: 3px 3px 3px rgb(143, 143, 143);
 }
 
 #pfp {
