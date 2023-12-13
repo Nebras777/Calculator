@@ -88,6 +88,11 @@ html, body {
 #pfp {
     width: 50px;
     border-radius: 50%;
+    transition: transform 0.1s ease-in-out;
+}
+
+#pfp:hover {
+    transform: scale(1.2) rotate(5deg);
 }
 
 #footer {
