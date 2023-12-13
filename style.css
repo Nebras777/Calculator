@@ -66,6 +66,11 @@ html, body {
     box-shadow: 3px 3px 3px darkgreen;
 }
 
+.button:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
+
 #equals {
     grid-column: 4 / span 2;
     background-color: blue;
