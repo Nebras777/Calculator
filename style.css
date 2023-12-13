@@ -23,17 +23,25 @@ html, body {
 }
 
 #input-box {
-    height: 150px;
+    height: 125px;
     background-color: rgb(88, 155, 0);
     border: 5px inset rgb(56, 99, 0);
+    direction: rtl;
+    padding-right: 5px;
 }
 
 #past-input {
-    height: 33%;
+    display: flex;
+    align-items: center;
+    height: 35%;
+    font-size: 25px;
 }
 
 #current-input {
-    height: 67%;
+    display: flex;
+    align-items: center;
+    height: 65%;
+    font-size: 40px;
 }
 
 #button-grid {
