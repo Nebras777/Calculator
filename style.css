@@ -1,3 +1,7 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
 html, body {
     margin: 0;
     height: 100%;
@@ -15,11 +19,13 @@ html, body {
     border: 17.5px black solid;
     background-color: black;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
 }
 
 #input-box {
     height: 150px;
     background-color: rgb(88, 155, 0);
+    border: 5px inset rgb(56, 99, 0);
 }
 
 #past-input {
@@ -47,10 +53,23 @@ html, body {
     border-radius: 5px;
     font-size: large;
     font-weight: 700;
+    box-shadow: 3px 3px 3px rgb(169, 169, 169);
+}
+
+.button.clearer {
+    background-color: red;
+    box-shadow: 3px 3px 3px maroon;
+}
+
+.button.operator {
+    background-color: green;
+    box-shadow: 3px 3px 3px darkgreen;
 }
 
 #equals {
     grid-column: 4 / span 2;
+    background-color: blue;
+    box-shadow: 3px 3px 3px navy;
 }
 
 #pfp {
