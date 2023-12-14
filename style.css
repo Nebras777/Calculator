@@ -54,7 +54,7 @@ html, body {
     padding-top: 17.5px;
 }
 
-.button {
+button {
     padding: 0;
     border: 0;
     background-color: rgb(204, 204, 204);
@@ -64,22 +64,22 @@ html, body {
     box-shadow: 3px 3px 3px rgb(169, 169, 169);
 }
 
-.button.clearer {
+.clearer {
     background-color: rgb(88, 155, 0);
     box-shadow: 3px 3px 3px rgb(56, 99, 0);
 }
 
-.button.operator {
+.operator {
     background-color: rgb(164, 164, 164);
     box-shadow: 3px 3px 3px rgb(143, 143, 143);
 }
 
-.button:active {
+button:active {
     transform: translate(3px, 3px);
     box-shadow: none;
 }
 
-#equals {
+.equals {
     grid-column: 4 / span 2;
     background-color: rgb(164, 164, 164);
     box-shadow: 3px 3px 3px rgb(143, 143, 143);
