@@ -64,7 +64,8 @@ button {
     box-shadow: 3px 3px 3px rgb(169, 169, 169);
 }
 
-.clearer {
+#delete,
+#clear {
     background-color: rgb(88, 155, 0);
     box-shadow: 3px 3px 3px rgb(56, 99, 0);
 }
