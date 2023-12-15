@@ -21,4 +21,6 @@ numberButtons.forEach((button) =>
     button.addEventListener('click', () => addNumber(button.textContent))
 )
 
-
+operatorButtons.forEach((button) =>
+    button.addEventListener('click', () => setOperator(button.textContent))
+)
