@@ -17,6 +17,12 @@ function addNumber(number) {
     bottomInput.textContent += number
 }
 
+function setOperator(operation) {
+    input1 = bottomInput.textContent
+    operator = operation
+    topInput.textContent = `${input1} ${operator}`
+}
+
 numberButtons.forEach((button) =>
     button.addEventListener('click', () => addNumber(button.textContent))
 )

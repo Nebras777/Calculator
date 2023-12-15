@@ -26,7 +26,6 @@ html, body {
     height: 125px;
     background-color: rgb(88, 155, 0);
     border: 5px inset rgb(56, 99, 0);
-    direction: rtl;
     padding-right: 5px;
 }
 
@@ -42,6 +41,7 @@ html, body {
     align-items: center;
     height: 65%;
     font-size: 40px;
+    direction: rtl;
 }
 
 #button-grid {
