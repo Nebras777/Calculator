@@ -80,7 +80,7 @@ button:active {
     box-shadow: none;
 }
 
-.equals {
+#equals {
     grid-column: 4 / span 2;
     background-color: rgb(164, 164, 164);
     box-shadow: 3px 3px 3px rgb(143, 143, 143);
