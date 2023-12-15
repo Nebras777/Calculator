@@ -27,6 +27,7 @@ html, body {
     background-color: rgb(88, 155, 0);
     border: 5px inset rgb(56, 99, 0);
     padding-right: 5px;
+    direction: rtl;
 }
 
 #past-input {
@@ -41,7 +42,6 @@ html, body {
     align-items: center;
     height: 65%;
     font-size: 40px;
-    direction: rtl;
 }
 
 #button-grid {

@@ -20,7 +20,7 @@ function addNumber(number) {
 function setOperator(operation) {
     input1 = bottomInput.textContent
     operator = operation
-    topInput.textContent = `${input1} ${operator}`
+    topInput.textContent = `${operator} ${input1}`
 }
 
 numberButtons.forEach((button) =>
