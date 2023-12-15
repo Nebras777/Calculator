@@ -12,7 +12,7 @@ const bottomInput = document.getElementById('current-input')
 
 function addNumber(number) {
     if (bottomInput.textContent === '0') {
-        bottomInput.textContent = null
+        resetInput()
     }
     bottomInput.textContent += number
 }
@@ -21,6 +21,14 @@ function setOperator(operation) {
     input1 = bottomInput.textContent
     operator = operation
     topInput.textContent = `${operator} ${input1}`
+}
+
+function evaluate() {
+    
+}
+
+function resetInput() {
+    bottomInput.textContent = null
 }
 
 numberButtons.forEach((button) =>
