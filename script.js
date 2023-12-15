@@ -30,3 +30,5 @@ numberButtons.forEach((button) =>
 operatorButtons.forEach((button) =>
     button.addEventListener('click', () => setOperator(button.textContent))
 )
+
+equals.addEventListener('click', () => evaluate())
