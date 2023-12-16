@@ -46,7 +46,7 @@ html, body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    width: 325px;
+    min-width: 325px;
     height: 300px;
     grid-gap: 12.5px;
     padding-top: 17.5px;

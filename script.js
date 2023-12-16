@@ -13,6 +13,10 @@ const bottomInput = document.getElementById('current-input')
 
 function addNumber(number) {
     if (bottomInput.textContent === '0' || resetVariable) resetInput()
+    else if (bottomInput.textContent.length >= 15) {
+        alert("Maximum 15 digits")
+        return number
+    }
     bottomInput.textContent += number
 }
 
