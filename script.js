@@ -55,6 +55,9 @@ function operate() {
         case "÷":
             return (+input1 / +input2).toString()
             break;
+        case "^":
+            return (Number(input1) ** +input2).toString()
+            break;
     }
 }
 
