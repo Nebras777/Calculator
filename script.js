@@ -1,6 +1,7 @@
 let input1 = ''
 let input2 = ''
 let operator = ''
+let operatorChosen = false
 
 const numberButtons = document.querySelectorAll('.number')
 const operatorButtons = document.querySelectorAll('.operator')
@@ -18,16 +19,19 @@ function addNumber(number) {
 }
 
 function setOperator(operation) {
+    if (operatorChosen) return
     input1 = bottomInput.textContent
     operator = operation
     topInput.textContent = `${operator} ${input1}`
     bottomInput.textContent = '0'
+    operatorChosen = true
 }
 
 function evaluate() {
     input2 = bottomInput.textContent
     topInput.textContent = `= ${input2} ${operator} ${input1}`
     bottomInput.textContent = operate()
+    operatorChosen = false
 }
 
 function resetInput() {
