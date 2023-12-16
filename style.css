@@ -26,20 +26,18 @@ html, body {
     height: 125px;
     background-color: rgb(88, 155, 0);
     border: 5px inset rgb(56, 99, 0);
-    padding-right: 5px;
-    direction: rtl;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: right;
+    line-height: 2;
 }
 
 #past-input {
-    display: flex;
-    align-items: center;
     height: 35%;
     font-size: 25px;
 }
 
 #current-input {
-    display: flex;
-    align-items: center;
     height: 65%;
     font-size: 40px;
 }
