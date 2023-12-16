@@ -1,7 +1,7 @@
 let input1 = ''
 let input2 = ''
 let operator = ''
-let operatorChosen = false
+let caseVariable = false
 
 const numberButtons = document.querySelectorAll('.number')
 const operatorButtons = document.querySelectorAll('.operator')
@@ -12,30 +12,29 @@ const topInput = document.getElementById('past-input')
 const bottomInput = document.getElementById('current-input')
 
 function addNumber(number) {
-    if (bottomInput.textContent === '0') {
-        resetInput()
-    }
+    if (bottomInput.textContent === '0' || caseVariable) resetInput()
     bottomInput.textContent += number
 }
 
 function setOperator(operation) {
-    if (operatorChosen) return
+    if (operator !== '') evaluate()
     input1 = bottomInput.textContent
     operator = operation
     topInput.textContent = `${operator} ${input1}`
-    bottomInput.textContent = '0'
-    operatorChosen = true
+    caseVariable = true
 }
 
 function evaluate() {
+    if (operator === '' || caseVariable) return
     input2 = bottomInput.textContent
     topInput.textContent = `= ${input2} ${operator} ${input1}`
     bottomInput.textContent = operate()
-    operatorChosen = false
+    operator = ''
 }
 
 function resetInput() {
     bottomInput.textContent = null
+    caseVariable = false
 }
 
 function operate() {
