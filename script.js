@@ -54,6 +54,19 @@ function operate() {
     }
 }
 
+function clear() {
+    input1 = ''
+    input2 = ''
+    operator = ''
+    resetVariable = false
+    topInput.textContent = ''
+    bottomInput.textContent = '0'
+}
+
+function deleteInput() {
+    bottomInput.textContent = bottomInput.textContent.slice(0, -1)
+}
+
 numberButtons.forEach((button) =>
     button.addEventListener('click', () => addNumber(button.textContent))
 )
@@ -63,3 +76,7 @@ operatorButtons.forEach((button) =>
 )
 
 equals.addEventListener('click', evaluate)
+
+clearer.addEventListener('click', clear)
+
+deleter.addEventListener('click', deleteInput)
