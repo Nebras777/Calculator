@@ -31,6 +31,9 @@ function setOperator(operation) {
 
 function evaluate() {
     if (operator === '' || resetVariable) return
+    if (operator === '÷' && bottomInput.textContent === '0') {
+        alert("Cannot divide by 0!")
+    }
     input2 = bottomInput.textContent
     topInput.textContent = `${input1} ${operator} ${input2} =`
     bottomInput.textContent = operate()
@@ -54,6 +57,7 @@ function operate() {
             return (+input1 * +input2).toString()
             break;
         case "÷":
+            if (bottomInput.textContent === '0') return null
             return (+input1 / +input2).toString()
             break;
         case "^":
