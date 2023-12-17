@@ -87,6 +87,30 @@ function addDecimal() {
     bottomInput.textContent += "."
 }
 
+function keyboardIntergation(e) {
+    if (e.key >= 0 && e.key <= 9) addNumber(e.key)
+    if (e.key === ".") addDecimal()
+    if (e.key === "Backspace") deleteInput()
+    if (e.key === "=" || e.key === "Enter") evaluate()
+    switch(e.key) {
+        case "+":
+            setOperator("+")
+            break;
+        case "-":
+            setOperator("-")
+            break;
+        case "*":
+            setOperator("×")
+            break;
+        case "/":
+            setOperator("÷")
+            break;
+        case "^":
+            setOperator("^")
+            break;
+    }
+}
+
 numberButtons.forEach((button) =>
     button.addEventListener('click', () => addNumber(button.textContent))
 )
@@ -102,3 +126,5 @@ clearer.addEventListener('click', clear)
 deleter.addEventListener('click', deleteInput)
 
 decimal.addEventListener('click', addDecimal)
+
+window.addEventListener('keydown', keyboardIntergation)
